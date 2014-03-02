@@ -1,0 +1,47 @@
+copied from the /r/Naut CSS Theme. thanks!
+
+
+* This theme is a mix of the Naut theme + some of my own. 
+
+
+Installation Instructions
+
+	Setting up the sidebar
+	1. Go to /r/YourSubreddit/about/edit
+	2. In the sidebar field, paste the following and change ONLY "YSR" into your subreddit name.
+
+		######[Home](http://www.reddit.com#top) [hot](http://www.reddit.com/r/YSR/hot) [new](http://www.reddit.com/r/YSR/new/) [top](http://www.reddit.com/r/YSR/top/)
+
+	3. Scrolling down, under "content options" input "Submit new content" in both the text fields.
+	4. Scroll further down and under "look and feel" click "choose file" and upload the "headerbypass.png" from the images folder.
+	5. Hit save.
+
+	Setting up the stylesheet
+	1. Go to /r/YourSubreddit/about/stylesheet
+	2. In the stylesheet field, paste everything from the .css file.
+	3. Before you hit save, scroll down a bit and under images click "choose file" upload "logo", "headerimg" and "spritesheet" from the images folder. 
+	4. Click save.
+
+	IF YOUR SUBREDDIT ONLY SUBMIT LINK POSTS: 
+	1. Go into the CSS and Ctrl + F "self posts"
+	2. Remove the slashes and asterisks from this line:
+		/*.sidebox.submit.submit-text {display: none;}*/
+
+	3. And add them to this line
+		.sidebox.submit.submit-link {display: none;} 
+
+
+/u/moc_tidder
+
+
+
+pending stuff:
+
+* review http://daringfireball.net/projects/markdown/syntax and beautify the sidebar. 
+* Full sidebar cleanup
+* Content link section
+* Normal link
+* compressed link
+* stickied css 
+* comments/gilded comments
+
