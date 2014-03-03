@@ -174,11 +174,12 @@ body {
 
 		#header-bottom-right {
 		    background: #fff;
-		    padding: 4px 8px;
+		    padding: 4px 8px !important;
 		    -webkit-border-top-left-radius: 0;
 		    -moz-border-radius-topleft: 0;
 		    border-top-left-radius: 0;
 		    border-bottom: 0;
+		    padding: 4px 8px !important;
 		}
 		#header-bottom-right .separator {
 		    color: #ccc;
@@ -309,14 +310,13 @@ body {
 
 		/* User bar */
 		#header-bottom-right {
-			/*position: absolute;
-			top: 141px;
-			right: 0px;
-			padding: 8px 15px 7px 15px;
-			width: auto;
-			height: 12px;*/
+			top: auto !important;
+			bottom: 0px !important;
 			background-color: transparent;
 		}
+			.userbarHide{
+				display: none !important;
+			}
 
 			.user {color: #999;}
 				.loggedin .user {color: #999;}
@@ -333,7 +333,7 @@ body {
 
 			/* Mail / Modmail icons */
 			#mail {
-				top: -2px;
+				top: -2px ;
 				overflow: visible;
 				width: 16px;
 				height: 16px;
@@ -834,7 +834,65 @@ body {
 						}
 
 
+	/*Content Area*/
+
+	/* Expand post */
+	.expando-button {
+		margin: 0px 5px 0px 0px !important;
+		width: 16px !important;
+		height: 16px !important;
+		background-color: transparent !important;
+		background-image: url(%%spritesheet%%) !important;
+		cursor: pointer;
+				}
+		
+/* Link Titles */
+/*Unvisited*/	.thing .title.loggedin.click, .thing .title.click, .thing .title.loggedin, .thing .title {color:#5b92fa;}
+/*Visited  */	.thing .title:visited, .thing.visited .title {color:#7D5D8A;}
+/*Clicking */	.thing .title.loggedin.click:visited, .thing .title.click:visited {color:#5b92fa;}
+
+/*  +  */	.content .expando-button.selftext.collapsed {background-position:0 -17px;}				
+/*  +  */	.content .expando-button.selftext.collapsed:hover {background-position:-16px -17px;}
+/*  -  */	.content .expando-button.selftext.expanded {background-position:-32px -17px;}				
+/*  -  */	.content .expando-button.selftext.expanded:hover {background-position:-48px -17px;}	
+
+			.expando-button.video.collapsed {background-position: -64px -17px;}
+			.expando-button.video.collapsed:hover, .eb-vch {background-position: -80px -17px;}
+			.expando-button.video.expanded, .eb-ve {background-position: -64px -17px;}
+			.expando-button.video.expanded:hover, .eb-veh {background-position: -80px -17px;}
+
+			.res .expando-button.image.collapsed,.expando-button.image.gallery.collapsedExpando, .expando-button.image.collapsedExpando {background-position: -96px -17px!important;}
+			.res .expando-button.image.collapsed:hover, .expando-button.image.collapsedExpando:hover, .expando-button.image.gallery.collapsedExpando:hover {background-position: -112px -17px!important;}
+			.res .expando-button.image.expanded {background-position: -96px -17px!important;}
+			.res .expando-button.image.expanded:hover {background-position: -112px -17px!important;}
+
+			/* Selftext expand */
+			.link .usertext .md {
+				padding: 0 5px;
+				background-color: #fff;
+				border: 0px solid;
+				border-top: 1px solid #e5e5e5;
+				border-radius: 0px;
+				color: #404040;
+				font-weight: normal;
+				font-size: 14px;
+				font-family: arial, sans-serif;
+				line-height: 1.35em;
+			}
+
+
+
 /*temporary*/
+
+/*res overrides*/
+.res .RES-keyNav-activeElement, .res .commentarea .RES-keyNav-activeElement .md, .res .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+	background-color: transparent!important;
+	outline: dashed 1px #D5D8DA;
+}
+
+.entry{
+	padding: 10px;
+}
 
 .titlebox form.toggle, .leavemoderator{
 	background: none;
@@ -854,11 +912,28 @@ body {
 	color: #777;
 	margin-right: 330px;
 	margin-top: 10px;
-	padding: 20px;
+	padding: 10px;
 	margin-left: 10px;
-	padding-left: 10px;
 }
 
+body >.content .link .midcol{
+	padding: 10px;
+	padding-left: 0px;
+}
+
+.title .domain{
+	display: none;
+}
+
+.usertext-body {
+	border-top: dashed 1px #ccc;	
+}
+
+.link .usertext .md{
+	background-color: transparent !important;
+	border: none;
+	border-radius: 0px;
+}
 
 /*box-shadow: 0 0 0 10px rgba(150, 150, 150, 0.1), 0 1px 3px rgba(25, 25, 25, 0.3), 0 10px 15px rgba(200, 200, 200, 0.1) inset*/
 
