@@ -1918,8 +1918,15 @@ a:hover{
 }
 
 
-.stylesheet-customize-container{
+div.stylesheet-customize-container{
 	margin-top: 75px;
 	margin-left: 5px;
 	margin-right: 5px;
 }
+
+div.create-reddit{
+	margin-top: 80px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
