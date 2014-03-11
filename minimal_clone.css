@@ -3,7 +3,7 @@ body {
 	background-color: #f1f1f1;
 	color: #3b3b3b;
 	
-	font-family: arial, sans-serif;
+	font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif!important;
 
 	background: #ccc url(%%background5%%);
 	background-repeat: repeat;
@@ -37,7 +37,7 @@ body {
 		color: #555555;
 	}
 
-	::selection {background-color:#52a8ec;color:white;font-weight:bold;}
+	::selection {background-color:#52a8ec;color:white;font-weight:normal;}
 
 	/* Link */
 	a {
@@ -53,7 +53,7 @@ body {
 		color: #ff4444;
 		font-size: 13px;
 		
-		font-family: arial, sans-serif;
+		
 
 	}
 
@@ -282,7 +282,7 @@ body {
 								color: #999;
 								font-weight: normal;
 								
-								font-family: arial, sans-serif;
+								
 
 							}
 
@@ -440,7 +440,7 @@ body {
 			padding-top: 25px;
 			width: 300px;
 			text-align: left;
-			font-family: arial, sans-serif;
+			
 			background: #fbfbfb;
 			outline: 5px solid #E7E7E7;
 			border: solid 1px #fff;
@@ -481,7 +481,7 @@ body {
 					font-weight: normal;
 					font-size: 15px;
 					
-					font-family: arial, sans-serif;
+					
 
 					cursor: pointer;
 					line-height: 30px;
@@ -518,7 +518,7 @@ body {
 						font-weight: 600;
 						font-size: 14px;
 						
-						font-family: arial, sans-serif;
+						
 
 						cursor: default;
 						text-indent: 0px;
@@ -533,7 +533,7 @@ body {
 				margin: 0px;
 				font-weight: lighter;
 				
-				font-family: arial, sans-serif;
+				
 
 			}
 
@@ -553,10 +553,10 @@ body {
 			.sidebox .subtitle {font-size: 1.6em;}
 		
 			/* Sub / Unsub button */
+
 			.fancy-toggle-button .active {
-				padding: 1px 8px;
-				background-image: none !important;
 				outline: none !important;
+				background-image: none !important;
 				border: 0px;
 				border-radius: 2px;
 				color: #fff !important;
@@ -564,8 +564,6 @@ body {
 				font-weight: normal;
 				font-size: 12px;
 				
-				font-family: arial, sans-serif;
-
 				line-height: 26px;
 				cursor: default;
 			}	
@@ -600,29 +598,28 @@ body {
 
 				/* Unsub */
 				.fancy-toggle-button .remove {
-					background-color: #fff;
-					border: 1px solid #d4d4d4;
+					background-color: #ff7f50;
+					border-top: 2px solid #ff7f50;
+					border-bottom: 2px solid #ff7f50;
 					-webkit-box-shadow: 0 1px 0 #e2e0e0;
-					box-shadow: 0 1px 0 #e2e0e0;
-					font-size: 10px;
-					line-height: 16px;
-					color: #737373 !important;
-					cursor: pointer;
+					box-shadow: 0 1px 0 #e2e0e0;	
 				}
 
 					.fancy-toggle-button .remove:hover {
-						background-color: #fff;
-						color: #333;
-						border-bottom-width: 2px;
-						border-color: #bababa;
+						background-color: #ff7f50;
+						border-top: 2px solid #ff7f50;
+						border-bottom: 2px solid #9e2b00;
+						-webkit-box-shadow: none;
+						box-shadow: none;
 						text-decoration: none;
 					}
 
 						.fancy-toggle-button .remove:active {
-							background-color: #e5e5e5;
-							border-color: #a7a7a7;
-							border-top-width: 2px;
-							color: #333;
+							background-color: #9e2b00;
+							border-top: 2px solid #3c1000;
+							border-bottom: 2px solid #9e2b00;
+							-webkit-box-shadow: none;
+							box-shadow: none;
 						}
 
 
@@ -651,10 +648,11 @@ body {
 				.titlebox .users-online:before {display: none;}
 				.titlebox .users-online .number {font-style: italic;font-size: 12px;}
 				.titlebox .users-online .number:before {content: "(";}
-				.titlebox .users-online .number:after {content: " here)";}
+				.titlebox .users-online .number:after {content: " getting fit)";}
 				.titlelebox .word {display: none;}
 				.titlebox .users-online, .titlebox .number {cursor: text;}	
 				.titlebox .tagline {font-size: 12px;}	
+				.titlebox .subscribers .number:after {content: " in recovery";}
 
 			/* Subreddit description */
 			.titlebox {
@@ -666,7 +664,7 @@ body {
 					font-size: 14px;
 					line-height: 1.35em;
 					
-					font-family: arial, sans-serif;
+					
 
 				}
 
@@ -727,7 +725,7 @@ body {
 					font-weight: normal;
 					font-size: 16px;
 					
-					font-family: arial, sans-serif;
+					
 
 				}	
 					.side #search:before {
@@ -783,7 +781,7 @@ body {
 				text-transform: capitalize;
 				font-size: 14px;
 				
-				font-family: arial, sans-serif;
+				
 
 			}
 			
@@ -810,7 +808,7 @@ body {
 					color: #262626;
 					text-align: left;
 					
-					font-family: arial, sans-serif;
+					
 
 				}
 			
@@ -852,10 +850,10 @@ body {
 					text-transform: capitalize;
 					text-shadow: 0px 1px 0px #5787e1;
 					letter-spacing: 0px;
-					font-weight: bold;
+					font-weight: normal;
 					font-size: 13px;
 					
-					font-family: arial, sans-serif;
+					
 
 					line-height: 26px;
 					cursor: default;
@@ -912,7 +910,7 @@ body {
 						font-weight: normal;
 						font-size: 22px;
 						
-						font-family: arial, sans-serif;
+						
 
 					}
 
@@ -960,7 +958,7 @@ body {
 				}*/
 
 				/* Stickied Link */
-				.stickied.link {border-color: #C4DAC2 !important;}
+				.stickied.link {border-color: rgb(72, 173, 72) !important;outline-color: #C4DAC2 !important;}
 					.thing.stickied a.title, .thing.stickied a {color: #65b354!important; font-weight: normal !important;}
 					.thing.stickied a.thumbnail {background-position: -102px -209px;}
 
@@ -974,7 +972,7 @@ body {
 
 				.link .title {
 					font-weight: normal;
-					font-family: arial, sans-serif;
+					
 					line-height: 100%;
 					padding-bottom: 10px; 
 				}
@@ -991,7 +989,7 @@ body {
 
 				/* Upvote and downvotes */
 				.link .score {margin-bottom: -1px;margin-left: 0px;color:#999;
-					font-family: arial, sans-serif;}
+					}
 
 			
 					.link .score.likes {color: #ee5821;}	
@@ -1033,7 +1031,7 @@ body {
 						font-weight: normal;
 						font-size: 14px;
 						
-						font-family: arial, sans-serif;
+						
 
 						line-height: 1.35em;
 					}
@@ -1092,7 +1090,7 @@ body {
 					.link .entry li .comments {
 						visibility: visible;
 						color: #52a8ec;
-						font-weight: bold;
+						font-weight: normal;
 						font-size: 13px;
 					}
 
@@ -1111,14 +1109,14 @@ body {
 
 					.entry .buttons a[onclick*="reply"] {
 						color: #52a8ec !important;
-						font-weight: bold !important;
+						font-weight: normal !important;
 						font-size: 13px !important;
 					}
 
 					.link .flat-list {
 						font-weight: normal;
 						
-						font-family: arial, sans-serif;
+						
 
 					}
 
@@ -1136,7 +1134,7 @@ body {
 				border-radius: 2px;
 				border: 1px solid #e2a600 !important;
 				color: #fff;
-				font-weight: bold;
+				font-weight: normal;
 				background-image: none;
 			}
 
@@ -1144,14 +1142,14 @@ body {
 				border-radius: 2px;
 				background-color: #dc4437;
 				color: #fff;
-				font-weight: bold;
+				font-weight: normal;
 				border: 1px solid #c4362a;
 				background-image: none;
 			}
 
 			a.pretty-button.neutral {
 				border-radius: 2px;
-				font-weight: bold;
+				font-weight: normal;
 				color: #fff;
 				background-color: #666666;
 				border: 1px solid #4d4d4d;
@@ -1160,7 +1158,7 @@ body {
 
 			a.pretty-button.positive {
 				border-radius: 2px;
-				font-weight: bold;
+				font-weight: normal;
 				color: #fff;
 				background-color: #109d59;
 				border: 1px solid #0a8a4c;
@@ -1185,9 +1183,11 @@ body {
 
 				/* First time visit infobar */
 				.infobar.welcome {
-					margin-right: 321px;
+					margin-right: 326px;
 					color: #333;
 					margin-bottom: 8px;
+					margin-left: 5px;
+					margin-top: 16px;
 				}
 
 			.nextprev {
@@ -1219,6 +1219,7 @@ body {
 
 
 			.submit-page .infobar {
+				display: none;
 				margin-top: 0px;
 				margin-bottom: 8px;
 				padding: 10px 10px 10px 10px;
@@ -1236,14 +1237,14 @@ body {
 			
 			.submit-page .tabmenu li a {margin:0px;}
 			.submit-page ul.tabmenu.formtab {padding-left: 0px;width: 500px;text-align:center; }
-			.formtabs-content {padding-top: 0px;border-top: 4px solid #5b92fa;}	
+			.formtabs-content {padding-top: 0px;border-top: 4px solid #52a8ec;}	
 		
 				.submit-page .tabmenu.formtab a {
 					padding: 5px 55px 0px 55px;
 					width: 100px;
 					background-color: white;
 					border: 0px solid;
-					color: #5b92fa;
+					color: #52a8ec;
 					text-align: center;
 					font-weight:normal;
 					font-size: 14px;
@@ -1254,7 +1255,7 @@ body {
 				
 					.submit-page .tabmenu.formtab .selected a {
 						padding: 5px 60px 0px 60px;
-						background-color: #5b92fa;
+						background-color: #52a8ec;
 						color: #fff;
 						font-size: 18px;
 					}
@@ -1274,7 +1275,7 @@ body {
 					box-shadow: none;
 					color: #333;
 					font-size: 100%;
-					font-family: arial, sans-serif;
+					
 				}
 
 					.submit-page textarea:hover, .roundfield input[type=url]:hover, .roundfield input[type=text]:hover, .login-form-side input[type=text]:hover, .login-form-side input[type=password]:hover,
@@ -1416,7 +1417,7 @@ body {
 			}
 
 			.linkflair-extra .linkflairlabel {
-				background-color: #5b92fa;
+				background-color: #52a8ec;
 				border: 1px solid #3a7ae6;
 				color: #fff;
 			}
@@ -1455,7 +1456,7 @@ body {
 		
 				.linefield .title {
 					padding: 1px 10px;
-					color: #5b92fa;
+					color: #52a8ec;
 				}
 
 				.linefield .title+.gray {font-size: small;}
@@ -1601,51 +1602,73 @@ body {
 			.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment {background-color: #FCFCFC !important;}
 			.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {background-color: #FCFCFC !important;}
 		
-		.RESshortcutside {
-			padding: 0px 0px !important;
-			background: none repeat-x scroll center left !important;
-			background-color: white !important;
+		
+		.RESshortcutside, .RESDashboardToggle {
+			outline: none !important;
 			background-image: none !important;
-			border: 0px solid !important;
-			border-radius: 0px !important;
-			color: #5b92fa !important;
+			border: 0px  !important;
+			border-radius: 2px !important;
+			color: #fff !important;
 			text-transform: capitalize !important;
-			font-weight: 500 !important;
-			font-size: 14px !important;
-			line-height: 20px !important;
+			font-weight: normal !important;
+			font-size: 12px !important;
+			margin-top: 0px !important;
+			font-family: arial, sans-serif !important;
+			cursor: default !important;
+			background-color: #52a8ec !important;
+			border-top: 2px solid #52a8ec !important;
+			border-bottom: 2px solid #52a8ec !important;
+			-webkit-box-shadow: 0 1px 0 #e2e0e0 !important;
+			box-shadow: 0 1px 0 #e2e0e0 !important;	
+			text-align: center !important;
+			width: 68px !important;
+			padding: 1px 6px !important;
+			margin-right: 5px !important;
 		}
+
+			.RESshortcutside:hover , .RESDashboardToggle:hover{
+				background-color: #52a8ec !important;
+				border-top: 2px solid #52a8ec !important;
+				border-bottom: 2px solid #3863b6 !important;
+				-webkit-box-shadow: none !important;
+				box-shadow: none !important;
+				text-decoration: none !important;
+			}
+
+			.RESshortcutside:active , .RESDashboardToggle:active {
+				background-color: #3863b6 !important;
+				border-top: 2px solid #21407a !important;
+				border-bottom: 2px solid #3863b6 !important;
+				-webkit-box-shadow: none !important;
+				box-shadow: none !important;
+			}
+
 		
-			.RESshortcutside.remove {
-				padding: 0px 3px 0px 0px !important;
-				background-color: white !important;
-				background-image: none !important;
-				border: 0px solid !important;
-				color: #3b3b3b !important;
-				font-weight: lighter !important;
+			.RESshortcutside.remove, .RESDashboardToggle.remove{
+				background-color: #ff7f50 !important;
+				border-top: 2px solid #ff7f50 !important;
+				border-bottom: 2px solid #ff7f50 !important;
+				-webkit-box-shadow: 0 1px 0 #e2e0e0 !important;
+				box-shadow: 0 1px 0 #e2e0e0 !important;	
+			}
+				
+			.RESshortcutside.remove:hover, .RESDashboardToggle.remove:hover{
+				background-color: #9e2b00 !important;
+				border-top: 2px solid #3c1000 !important;
+				border-bottom: 2px solid #9e2b00 !important;
+				-webkit-box-shadow: none !important;
+				box-shadow: none !important;
 			}
 		
-			.RESDashboardToggle {
-				padding: 0px 0px !important;
-				background: none repeat-x scroll center left !important;
-				background-color: white !important;
-				background-image: none !important;
-				border: 0px solid !important;
-				border-radius: 0px !important;
-				color: #5b92fa !important;
-				text-transform: capitalize !important;
-				font-weight: 500 !important;
-				font-size: 14px !important;
-				line-height: 20px !important;
+			.RESshortcutside.remove:active, .RESDashboardToggle.remove:active{
+				background-color: #ff7f50 !important;
+				border-top: 2px solid #ff7f50 !important;
+				border-bottom: 2px solid #9e2b00 !important;
+				-webkit-box-shadow: none !important;
+				box-shadow: none !important;
+				text-decoration: none !important;
 			}
 		
-			.RESDashboardToggle.remove {
-				padding: 2px 6px 2px 0px !important;
-				background-color: white !important;
-				background-image: none !important;
-				border: 0px solid !important;
-				color: #3b3b3b !important;
-				font-weight: lighter !important;
-			}
 		
 			#RESShortcutsEditContainer {
 				top: 1px !important;
@@ -1691,7 +1714,7 @@ body {
 			background-color: white !important;
 			border: 0px solid !important;
 			border-radius: 0px !important;
-			color: #5b92fa !important;
+			color: #52a8ec !important;
 		}
 		
 		.res #header-bottom-right {
@@ -1757,7 +1780,7 @@ body {
 }
 
 #siteTable > .link:first-child{
-	margin-top: 20px;
+	margin-top: 85px;
 }
 
 #siteTable > .link {
@@ -1781,7 +1804,7 @@ body >.content .link .midcol{
 	display: none;
 }
 
-.usertext-body {
+.expando .usertext-body {
 	border-top: dashed 1px #ccc;	
 }
 
@@ -1822,8 +1845,55 @@ a:hover{
 }
 
 .linkflair-supplement .linkflairlabel {
-	background-color: #5b92fa;
+	background-color: #52a8ec;
 	border: 1px solid #3a7ae6;
 	color: #fff;
 }
 
+.subButtons{
+	text-align: center;
+}
+
+.res_post_downs{
+	padding-left: 2px;
+	padding-right: 1px;
+}
+
+.res_post_ups{
+	padding-left: 1px;
+	padding-right: 2px;	
+}
+
+
+.usertext-body .md blockquote:nth-of-type(1){
+	position: absolute;
+	top: 170px;
+	left: 0px;
+	border: none;
+	right: 0px;
+	margin: 0px;
+	padding: 10px;
+	outline: 5px solid #C9ECF6;
+	margin-right: 335px;
+	margin-left: 15px;
+	border: 1px solid;
+	text-align: center;
+	background-color: #f4f8fa;
+	border-color: #5bc0de;
+	color:#23A1C7;
+}
+
+.usertext-body .md blockquote:nth-of-type(1){
+}
+
+.usertext-body .md p{
+	display:none;
+}
+
+.thing .tagline .author.submitter {
+	color: white !important;
+	font-weight: normal;
+	padding: 3px 5px!important;
+	border-radius: 2px !important;
+	background-color: #3B7AE2 !important;
+}
