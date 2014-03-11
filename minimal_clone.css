@@ -443,7 +443,7 @@ body {
 			
 			background: #fbfbfb;
 			outline: 5px solid #E7E7E7;
-			border: solid 1px #fff;
+			border: solid 1px #D1CDCD;
 			color: #777;
 		}
 					
@@ -1779,25 +1779,29 @@ body {
 	display: none;
 }
 
-#siteTable > .link:first-child{
+div.content > #siteTable > .link:first-child{
 	margin-top: 85px;
+}
+
+div.content > #siteTable > .link{
+	margin-right: 330px;
+	margin-top: 20px;
 }
 
 #siteTable > .link {
 	background: #fbfbfb;
 	outline: 5px solid #E7E7E7;
 	color: #777;
-	margin-right: 330px;
-	margin-top: 20px;
 	padding: 0px;
 	margin-left: 10px;
 	padding-left: 10px;
-	border: 1px solid #fff;
+	border: 1px solid #D1CDCD;
 }
 
 body >.content .link .midcol{
 	padding: 10px;
 	padding-left: 0px;
+	width: 5.1ex !important;
 }
 
 .title .domain{
@@ -1864,31 +1868,46 @@ a:hover{
 	padding-right: 2px;	
 }
 
+.usertext-body .md blockquote{
+	padding: 10px;
+	outline: 5px solid #C9ECF6;
+	border: 1px solid;
+	background-color: #f4f8fa;
+	border-color: #5bc0de;
+	color:#23A1C7;
+	margin-right: 5px;
+}
+
 
 .usertext-body .md blockquote:nth-of-type(1){
 	position: absolute;
 	top: 170px;
 	left: 0px;
-	border: none;
 	right: 0px;
 	margin: 0px;
-	padding: 10px;
-	outline: 5px solid #C9ECF6;
 	margin-right: 335px;
 	margin-left: 15px;
-	border: 1px solid;
 	text-align: center;
-	background-color: #f4f8fa;
-	border-color: #5bc0de;
-	color:#23A1C7;
 }
 
-.usertext-body .md blockquote:nth-of-type(1){
+.usertext-body .md blockquote hr{
+	margin: 0px;
+	text-align: center;
+	border-color: #777;
+	border-width: 0;
+	border-style: dotted;
 }
 
-.usertext-body .md p{
-	display:none;
+.usertext-body .md blockquote hr:after {
+	content: "····";
+	letter-spacing: 1em;
 }
+
+
+.usertext-body .md blockquote:nth-of-type(2) ul{
+	list-style-type: square; 
+}
+
 
 .thing .tagline .author.submitter {
 	color: white !important;
@@ -1896,4 +1915,11 @@ a:hover{
 	padding: 3px 5px!important;
 	border-radius: 2px !important;
 	background-color: #3B7AE2 !important;
+}
+
+
+.stylesheet-customize-container{
+	margin-top: 75px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
