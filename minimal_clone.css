@@ -532,9 +532,13 @@ body {
 				top: 183px;
 				margin: 0px;
 				font-weight: lighter;
-				
-				
+			}
 
+			blockquote >  h1{
+				color: #FF7C4C;
+				font-weight: normal !important;
+				margin-bottom: 0px !important;
+				line-height: 20px;
 			}
 
 			.titlebox h1.redditname a:before{
@@ -663,9 +667,6 @@ body {
 				.titlebox .md {
 					font-size: 14px;
 					line-height: 1.35em;
-					
-					
-
 				}
 
 				.titlebox .bottom {
@@ -673,6 +674,7 @@ body {
 					border-top: 1px solid #e5e5e5;
 					color: #999;
 					font-size: 110%;
+					display: none !important;
 				}
 
 				/* Download button */
@@ -852,16 +854,14 @@ body {
 					letter-spacing: 0px;
 					font-weight: normal;
 					font-size: 13px;
-					
-					
-
+					border-radius: 2px;
 					line-height: 26px;
 					cursor: default;
 				}
 
 					.sidecontentbox a.helplink:hover {
-						background-color: #6599fa;
-						border-top: 2px solid #6599fa;
+						background-color: #52a8ec;
+						border-top: 2px solid #52a8ec;
 						border-bottom: 2px solid #3863b6;
 						-webkit-box-shadow: none;
 						box-shadow: none;
@@ -1723,17 +1723,17 @@ body {
 			border-radius: 0px !important;
 		}
 
-			
-		
 			.res #userbarToggle {display: none !important;}
 
 			#RESAccountSwitcherIcon {margin-top: -5px;}
 
 			.res .author.submitter {
-				padding: 2px 5px !important;
 				background-color: #DD4B39!important;
 				border-radius: 0px !important;
 				color: #fff !important;
+				font-weight: normal;
+				padding: 3px 5px!important;
+				border-radius: 2px !important;
 			}
 
 				.res .author.submitter:hover {background-color: #ed5f4d !important;}
@@ -1821,7 +1821,6 @@ body >.content .link .midcol{
 a:hover{
 	text-decoration: none;
 }
-/*box-shadow: 0 0 0 10px rgba(150, 150, 150, 0.1), 0 1px 3px rgba(25, 25, 25, 0.3), 0 10px 15px rgba(200, 200, 200, 0.1) inset*/
 
 /* Link Flairs ! */
 
@@ -1879,6 +1878,7 @@ a:hover{
 }
 
 
+/* Top info panel */
 .usertext-body .md blockquote:nth-of-type(1){
 	position: absolute;
 	top: 170px;
@@ -1904,8 +1904,32 @@ a:hover{
 }
 
 
+/*Wiki Side Panel*/
 .usertext-body .md blockquote:nth-of-type(2) ul{
 	list-style-type: square; 
+}
+
+.usertext-body .md blockquote:nth-of-type(2) ul > li > a { 
+	color: #FF7C4C;
+}
+
+.usertext-body .md blockquote:nth-of-type(2) h1{
+	margin-left: 8px;
+}
+
+/*Rule Side panel*/
+.usertext-body .md blockquote:nth-of-type(3) h1 {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.usertext-body .md blockquote:nth-of-type(3) h4{
+	font-weight: normal;
+	text-align: justify;
+}
+
+.usertext-body .md blockquote:nth-of-type(3) h1 > a{
+	color: #FF7C4C;
 }
 
 
@@ -1930,3 +1954,19 @@ div.create-reddit{
 	margin-right: 5px;
 }
 
+.commentarea{
+	margin-top: -2px;
+	margin-right: 330px;
+	background: #fbfbfb;
+	outline: 5px solid #E7E7E7;
+	color: #777;
+	padding: 0px;
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #D1CDCD;
+}
+
+.infobar.welcome{
+	display: none;
+}
